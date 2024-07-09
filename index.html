@@ -14,10 +14,14 @@
             <p class="paragraph-18">
                 Assine nossa newsletter e transforme seu espaço de trabalho em um oásis de produtividade
             </p>
-            <form action="">
-                <input type="email" name="emailNews" id="emailNews" placeholder="Digite seu email" />
-                <button type="submit">QUERO RECEBER <img src="./assets/seta.png" alt=""></button>
+            <form id="newsletterForm">
+                <input type="email" name="emailNews" id="emailNews" placeholder="Digite seu email" required />
+                <button type="submit">
+                    <span id="buttonText">QUERO RECEBER</span> 
+                    <img id="buttonLoader" src="./assets/loader.gif" alt="Carregando..." style="display:none;">
+                </button>
             </form>
+            <p id="formMessage" class="form-message"></p>
         </div>
         <div class="itens">
             <ul>
@@ -44,5 +48,6 @@
             </ul>
         </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
